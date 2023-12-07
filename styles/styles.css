@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "ProximaNova";
+    src: url("/assets/fonts/ProximaNova-Regular.otf") format("opentype");
+  }
+  
+  :root {
+    --primairy-color-1: #f7a100;
+    --primairy-color-2: #ffffff;
+    --primairy-color-3: #5fc5f8;
+    --primairy-color-4: #333333;
+  
+    --secundairy-color-1: #53241b;
+    --secundairy-color-2: #478bb3;
+    --secundairy-color-3: #f8c463;
+    --secundairy-color-4: #66ba96;
+  
+    --grayscale-color-1: #ededed;
+    --grayscale-color-2: #cccccc;
+    --grayscale-color-3: #666666;
+    --grayscale-color-4: #333333;
+  
+    --background-color-1: #ffffff;
+    --background-color-2: #333333;
+  
+    --content-radius: 0.1em;
+    --regular-text: 1em;
+    --fonts: "ProximaNova", sans-serif;
+  }
+  
+  * {
+    font-family: var(--fonts);
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  header {
+    background-color: var(--primairy-color-1);
+    margin: 0;
+    padding .5em;
+  }
+  
+  header li {
+    list-style: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+  
+  header a {
+    color: var(--background-color-1);
+  }
+  header button {
+    background: none;
+    transition: var(--regular-transition);
+    border-style: none;
+  }
+
+  nav {
+    display: flex;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .logo-funda {
+    width: auto;
+    height: 2em;
+    cursor: pointer;
+  }
+  
+  .hamburger {
+    flex-direction: column-reverse;
+  }
+  
+  .hamburger,
+  .nav-list-right,
+  .nav-list-left {
+    cursor: pointer;
+    font-size: 0.8em;
+    display: flex;
+  }
+
+  .hamburger img,
+  .nav-list-right img {
+  height: 2em;
+  width: auto;
+  align-self: center;
+    }   
+
+.header a:link,
+.header a:visited,
+.header a:active {
+  color: var(--primairy-color-2);
+  text-decoration: none;
+    }
+  
+/* Main */
+    main {
+        margin: 3em;
+    }
+
+    .list-saved-houses{
+        background-color: #f7a100;
+        padding: 3em;
+        display: block;
+        
+    }
+
+    
+    .all-saved-houses {
+        margin: 0;
+        padding: 1em;
+        border-style: solid;
+        border-width: .2em;
+        border-color: var(--grayscale-color-3);
+
+    }
+
+    .saved-house {
+        display: flex;
+    }
+
+    .all-saved-houses img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+  /* footer */
+
+  footer {
+    background-color: var(--grayscale-color-1);
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+}
+
+footer li,
+footer ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  line-height: 2em;
+}
+
+footer a {
+    transition: .3s;
+}
+
+footer a:link,
+footer a:visited {
+  color: var(--secundairy-color-2);
+  text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--primairy-color-4);
+    animation-duration: 1s;
+  }
