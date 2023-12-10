@@ -5,5 +5,5 @@ var PopUpAddHouse = document.querySelector("pop-up-hidden");
 
 // Luisteren naar het gebruikers event
 AddListButton.addEventListener("click", function() {
-    PopUpAddHouse.classList.toggle("pop-up-show");
+    PopUpAddHouse.classList.add("pop-up-show");
   });
