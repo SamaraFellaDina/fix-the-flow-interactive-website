@@ -103,6 +103,7 @@ color: var(--primairy-color-2);
 text-decoration: none;
   }
   
+/* Javascript */
 /* Pop-up */
 .pop-up-hidden {
   display: none;
@@ -119,8 +120,6 @@ text-decoration: none;
   box-shadow: 0em 0em 1em var(--grayscale-color-2);
 }
 
-
-/* Javascript */
 .pop-up-show {
   display: block;
 }
@@ -136,7 +135,6 @@ text-decoration: none;
   font-size: 1em;
   color: var(--background-color-2);
 }
-
 /* Javascript */
 
 
