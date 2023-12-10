@@ -119,19 +119,10 @@ text-decoration: none;
   box-shadow: 0em 0em 1em var(--grayscale-color-2);
 }
 
+
+/* Javascript */
 .pop-up-show {
-  background: var(--background-color-1);
   display: block;
-  padding: 5em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-  border: var(--regular-border);
-  border-radius: .1em;
-
-  box-shadow: 0em 0em 1em var(--grayscale-color-2);
 }
 
 .pop-up-button-submit {
@@ -145,6 +136,8 @@ text-decoration: none;
   font-size: 1em;
   color: var(--background-color-2);
 }
+
+/* Javascript */
 
 
 /* Micro-transactie */
