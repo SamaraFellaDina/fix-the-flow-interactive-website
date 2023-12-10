@@ -29,6 +29,7 @@
   --content-radius: 0.1em;
   --regular-text: 1em;
   --fonts: "ProximaNova", sans-serif;
+  --regular-border: .1em solid var(--grayscale-color-3);
 }
 
 * {
@@ -102,6 +103,61 @@ color: var(--primairy-color-2);
 text-decoration: none;
   }
   
+/* Pop-up */
+.pop-up {
+  display: none;
+  background: var(--background-color-1);
+  padding: 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  border: var(--regular-border);
+  border-radius: .1em;
+
+  box-shadow: 0em 0em 1em var(--grayscale-color-2);
+}
+
+.pop-up-add-list {
+  background: var(--background-color-1);
+  display: block;
+  padding: 5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  border: var(--regular-border);
+  border-radius: .1em;
+
+  box-shadow: 0em 0em 1em var(--grayscale-color-2);
+}
+
+.pop-up-button-submit {
+  padding: 1em;
+  width: auto;
+  text-align: left;
+  background-color: var(--background-color-1);
+  border-style: solid;
+  border-color: var(--primairy-color-1);
+  border-radius: 0.15em;
+  font-size: 1em;
+  color: var(--background-color-2);
+}
+
+
+/* Micro-transactie */
+/* .pop-up-button-submit {
+  background-color: var(--primairy-color-1);
+  border-style: none;
+  color: var(--background-color-1);
+
+} */
+
+
+
+
 /* Main */
 main {
     margin: 3em;
@@ -135,7 +191,6 @@ main {
   background-color: var(--primairy-color-1);
   border-style: none;
 
-  border-color: var(--secundairy-color-1);
   border-radius: .15em;
 
   font-size: 1em;
@@ -157,15 +212,11 @@ main {
   background-color: var(--secundairy-color-7);
 }
 
-.all-saved-houses {
-    border-style: solid;
-    border-width: .2em;
-    border-color: var(--grayscale-color-3);
-
-}
-
 .saved-house {
     display: flex;
+    border: var(--regular-border);
+    border-radius: .1em;
+    margin: 1em 0 1em 0;
 }
 
 .all-saved-houses img {
@@ -174,9 +225,6 @@ main {
     object-fit: cover;
 }
 
-  .all-saved-houses ul {
-
-  }
 /* footer */
 
 footer {

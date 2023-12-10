@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saved Houses</title>
     <link rel="stylesheet" href="styles\styles.css">
-    <link rel="stylesheet" href="assets\icons">
+    <link rel="shortcut icon" href="https://assets.fstatic.nl/master_3757/assets/favicon.ico">
 </head>
 <body>
     <header class="header">
@@ -26,22 +26,31 @@
                 <li><button><a><img src="assets\icons\User.svg" alt="Profile icon"><br>Profiel</a></button></li>
             </ul>
         </nav>        
-    </header> 
-
-    
-    
+    </header>  
 
     <main>
         <h1><img src="assets\icons\Heart Filled.svg" alt="Hartje">Bewaarde huizen</h1>
-        <div class="list-saved-houses">
-            <h2>Mijn lijsten</h2>
-            <div>
-                <ul>
-                    <li><button><a>Studio van zoon</a></button></li>
-                    <li><button><a>Huis van oma</a></button></li>
-                    <li><button><a>Inspiratie</a></button></li>
-                    <li class="add-button-saved-houses"><button><a>+ Toevoegen</a></button></li>
-                </ul>
+        <div>
+            <div class="list-saved-houses">
+                <h2>Mijn lijsten</h2>
+                <div>
+                    <ul>
+                        <li><button>Studio van zoon</button></li>
+                        <li><button>Huis van oma</button></li>
+                        <li><button>Inspiratie</button></li>
+                        <li class="add-button-saved-houses"><button><a>+ Toevoegen</a></button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pop-up">
+                <h2>Stap 1: creëren een lijst</h2>
+                <form>
+                    <label>Titel van lijst</label>
+                    <input type="Titel">
+                    <label>Beschrijving</label>
+                    <input type="Beschrijving">
+                    <button class="pop-up-button-submit">Doorgaan</button>
+                </form>
             </div>
         </div>
         
@@ -55,15 +64,24 @@
                         <li>100m2</li>
                         <li>NVM Makelaar</li>
                     </ul>
+                </div>
+            </div>
 
+            <div class="saved-house">
+                <img src="assets\pictures\vu-anh-TiVPTYCG_3E-unsplash.jpg">
+                <div>
+                    <ul>
+                        <li>€2.000</li>
+                        <li>100m2</li>
+                        <li>NVM Makelaar</li>
+                    </ul>
                 </div>
 
             </div>
         </div>
-
     </main>
-
-
+    
+ 
 
     <footer>
         <div class="shortcut-footer">
@@ -123,4 +141,4 @@
         </div>
     </footer>
 
-    <script src="scripts/scripts.js"></script> 
+    <script src="scripts\scripts.js"></script> 
