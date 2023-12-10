@@ -104,7 +104,7 @@ text-decoration: none;
   }
   
 /* Pop-up */
-.pop-up {
+.pop-up-hidden {
   display: none;
   background: var(--background-color-1);
   padding: 5em;
@@ -119,7 +119,7 @@ text-decoration: none;
   box-shadow: 0em 0em 1em var(--grayscale-color-2);
 }
 
-.pop-up-add-list {
+.pop-up-show {
   background: var(--background-color-1);
   display: block;
   padding: 5em;
