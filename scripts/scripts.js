@@ -11,12 +11,25 @@ AddListButton.addEventListener("click", function() {
 });
 
 
-var button = document.querySelector(".pop-up fieldset button")
-var popUpStepone = document.querySelector("stap-1")
-var popUpStepTwo = document.querySelector("stap-2")
 
-button.addEventListener("click", function(){
-  console.log("click button")
-  popUpStepone.classList.add("pop-up-hidden");
-  button.classList.add(popUpStepTwo)
+var buttonPopUp = document.querySelector(".pop-up fieldset button");
+var PopUpForm1 = document.querySelector(".pop-up-form-1");
+var PopUpForm2 = document.querySelector(".pop-up-form-2");
+
+PopUpForm2.classList.add("pop-up-none");
+
+buttonPopUp.addEventListener("click", function(e) {
+  e.preventDefault();
+  console.log("clicked");
+  PopUpForm1.classList.add("pop-up-none");
+  PopUpForm2.classList.remove("pop-up-none");
+})
+
+
+var input = document.querySelector(".pop-up-form-1 input");
+var buttonForm1 = document.querySelector(".pop-up-form-1 button")
+
+input.addEventListener("input", function(e) {
+  console.log("input");
+  buttonForm1.classList.add("next-step");
 })

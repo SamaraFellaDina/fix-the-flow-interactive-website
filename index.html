@@ -44,9 +44,12 @@
             </div>
             <div class="pop-up">
 
-                <form class="stap-1">
+                <form class="pop-up-form-1">
                     <fieldset>
-                        <legend><span>stap 1</span><br> creëren van een lijst</legend>
+                        <legend>
+                            <span>stap 1</span>
+                            <br> creëren van een lijst
+                        </legend>
                         <div>
                             <div>
                                 <label>Titel van lijst</label>
@@ -61,9 +64,50 @@
                     </fieldset>
                 </form>
 
-                <form class="stap-2">
+                <form class="pop-up-form-2">
                     <fieldset>
-                        <legend><span>stap 2</span><br>Delen met anderen</legend>
+                        <legend>
+                            <span>stap 2</span>
+                            <br>Delen met anderen
+                        </legend>
+                        <p>
+                            Wil jij je lijst delen met anderen?
+                            Stuur een notificatie om ze uit te nodigen.
+                        </p>
+                        <div class="pop-up-socials">
+                            <ul>
+
+                                <li>
+                                    <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Social Media / Facebook</title>
+                                        <g id="Social-Media-/-Facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path d="M19,17.08 L14.77,17.08 L14.77,23.92 L19,23.92 L19,44 L27,44 L27,23.83 L32.62,23.83 L33.22,17.08 L27,17.08 L27,13.23 C27,11.64 27.32,11.01 28.86,11.01 L33.22,11.01 L33.22,4 L27.65,4 C21.65,4 18.95,6.64 18.95,11.69 L19,17.08 Z" id="facebook" fill="#fff"></path>
+                                        </g>
+                                    </svg>
+                                </li>
+
+                                <li>
+                                    <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Mail</title>
+                                        <g id="Mail" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path d="M42.5,10 L5.5,10 C4.67157288,10 4,10.6715729 4,11.5 L4,36.5 C4,37.3284271 4.67157288,38 5.5,38 L42.5,38 C43.3284271,38 44,37.3284271 44,36.5 L44,11.5 C44,10.6715729 43.3284271,10 42.5,10 Z M23.12,26.22 C23.6450214,26.600343 24.3549786,26.600343 24.88,26.22 L41,14.57 L41,35 L7,35 L7,14.57 L23.12,26.22 Z M9.95,13 L38.05,13 L24,23.15 L9.95,13 Z" id="mail" fill="#fff"></path>
+                                        </g>
+                                    </svg>
+                                </li>
+
+                                <li>
+                                    <?xml version="1.0" encoding="UTF-8"?>
+                                    <svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>Social Media / Instagram</title>
+                                        <g id="Social-Media-/-Instagram" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <path d="M34.676,10.925 C33.349,10.925 32.274,12 32.274,13.325 C32.274,14.65 33.349,15.725 34.676,15.725 C36.001,15.725 37.074,14.65 37.074,13.325 C37.074,12 36.001,10.925 34.676,10.925 M23.999,30.667 C20.318,30.667 17.333,27.683 17.333,24 C17.333,20.318 20.318,17.333 23.999,17.333 C27.681,17.333 30.666,20.318 30.666,24 C30.666,27.683 27.681,30.667 23.999,30.667 M23.999,13.73 C18.328,13.73 13.729,18.328 13.729,24 C13.729,29.672 18.328,34.272 23.999,34.272 C29.671,34.272 34.269,29.673 34.269,24 C34.269,18.328 29.671,13.73 23.999,13.73 M23.999,4 C18.568,4 17.888,4.024 15.755,4.12 C8.491,4.453 4.454,8.484 4.121,15.753 C4.023,17.888 4,18.569 4,24 C4,29.431 4.023,30.113 4.119,32.246 C4.453,39.51 8.483,43.547 15.753,43.88 C17.888,43.976 18.568,44 23.999,44 C29.431,44 30.113,43.976 32.246,43.88 C39.503,43.547 43.549,39.516 43.878,32.246 C43.976,30.113 43.999,29.431 43.999,24 C43.999,18.569 43.976,17.888 43.879,15.755 C43.552,8.498 39.517,4.455 32.248,4.122 C30.113,4.024 29.431,4 23.999,4 M23.999,7.605 C29.339,7.605 29.972,7.625 32.083,7.722 C37.503,7.968 40.034,10.54 40.281,15.92 C40.378,18.029 40.396,18.662 40.396,24.002 C40.396,29.343 40.376,29.975 40.281,32.083 C40.032,37.458 37.508,40.035 32.083,40.281 C29.972,40.378 29.343,40.398 23.999,40.398 C18.659,40.398 18.026,40.378 15.918,40.281 C10.485,40.033 7.966,37.45 7.719,32.082 C7.623,29.973 7.603,29.342 7.603,24 C7.603,18.66 7.624,18.029 7.719,15.918 C7.968,10.54 10.493,7.967 15.918,7.72 C18.028,7.625 18.659,7.605 23.999,7.605" id="instagram" fill="#fff"></path>
+                                        </g>
+                                    </svg>
+                                </li>
+
+                            </ul>
+                        </div>
+
                     </fieldset>
                 </form>
 

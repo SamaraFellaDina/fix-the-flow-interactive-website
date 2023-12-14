@@ -128,6 +128,10 @@ text-decoration: none;
   display: block;
 }
 
+.pop-up-none {
+  display: none;
+}
+
 /* Styling binnen pop-up */
 .pop-up fieldset {
   border-style: none;
@@ -186,21 +190,34 @@ input:focus {
   margin: .5em 0 .5em 0 ;
 }
 
-
-/* Javascript */
-
-.stap-2 {
-  display: none;
+.pop-up fieldset p {
+  color: var(--grayscale-color-3);
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  border-bottom: .1em solid var(--secundairy-color-5);
 }
 
+.pop-up-socials ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: flex;
+  
+  gap: .5em;
+}
+
+.pop-up-socials ul svg {
+  background-color: var(--primairy-color-3);
+  padding: .3em;
+  height: 2em;
+  width: auto;
+}
 /* Javascript */
-/* 
+
 .next-step {
   background-color: var(--primairy-color-1);
   border-style: none;
   color: var(--background-color-1);
-} */
-
+}
 
 /* Main */
 main {
