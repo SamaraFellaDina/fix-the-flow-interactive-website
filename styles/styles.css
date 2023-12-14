@@ -1,6 +1,6 @@
 @font-face {
     font-family: "ProximaNova";
-    src: url("assets/fonts/ProximaNova-Regular.otf") format("opentype");
+    src: url("/assets/fonts/ProximaNova-Regular.otf") format("opentype");
   }
   
 :root {
@@ -44,6 +44,7 @@ header {
   background-color: var(--secundairy-color-1);
   margin: 0;
   padding .5em;
+  
 }
 
 header li {
@@ -94,7 +95,7 @@ nav {
 height: 2em;
 width: auto;
 align-self: center;
-  }   
+}   
 
 .header a:link,
 .header a:visited,
@@ -105,11 +106,14 @@ text-decoration: none;
   
 /* Javascript */
 /* Pop-up */
-.pop-up-hidden {
+
+/* Lees dit om meer te weten over forms https://gerireid.com/forms.html*/
+.pop-up {
   display: none;
   background: var(--background-color-1);
-  padding: 5em;
-  position: absolute;
+  padding: 3em;
+  margin: 1em;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -117,43 +121,92 @@ text-decoration: none;
   border: var(--regular-border);
   border-radius: .1em;
 
-  box-shadow: 0em 0em 1em var(--grayscale-color-2);
+  box-shadow: var(--grayscale-color-3) 0px 22px 70px 4px;
 }
 
 .pop-up-show {
   display: block;
 }
 
-.pop-up-button-submit {
-  padding: 1em;
-  width: auto;
-  text-align: left;
+/* Styling binnen pop-up */
+.pop-up fieldset {
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  /* user agent, inherit van html */
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 1em;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  border-width: 0;
+}
+
+.pop-up fieldset legend {
+  font-weight: 700;
+  color: var(--grayscale-color-3);
+
+}
+
+.pop-up fieldset span {
+  color: var(--primairy-color-1);
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.pop-up fieldset div {
+  display: flex;
+  flex-direction: column;
+  gap: .1em;
+}
+
+.pop-up fieldset > div {
+  gap: .5em;
+} 
+
+.pop-up fieldset input {
+  background-color: var(--grayscale-color-1);
+  border: var(--regular-border);
+}
+
+input:focus {
+  border-color: var(--primairy-color-1);
+  background-color: var(--primairy-color-2);
+}
+
+.pop-up fieldset button {
+  padding: .8em;
   background-color: var(--background-color-1);
   border-style: solid;
   border-color: var(--primairy-color-1);
   border-radius: 0.15em;
   font-size: 1em;
-  color: var(--background-color-2);
+  color: var(--secundairy-color-5);
+  margin: .5em 0 .5em 0 ;
 }
+
+
 /* Javascript */
 
+.stap-2 {
+  display: none;
+}
 
-/* Micro-transactie */
-/* .pop-up-button-submit {
+/* Javascript */
+/* 
+.next-step {
   background-color: var(--primairy-color-1);
   border-style: none;
   color: var(--background-color-1);
-
 } */
-
-
 
 
 /* Main */
 main {
-    margin: 3em;
-    color: var(--primairy-color-4);
-    font-size: 1em;
+  margin: 3em;
+  color: var(--primairy-color-4);
+  font-size: 1em;
 }
 
 .list-saved-houses ul,
