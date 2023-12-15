@@ -174,10 +174,21 @@ text-decoration: none;
   border: var(--regular-border);
 }
 
-input:focus {
+
+.pop-up fieldset input:focus {
   border-color: var(--primairy-color-1);
   background-color: var(--primairy-color-2);
 }
+
+/* Javascript */
+
+#pop-up-next-step {
+  background-color: var(--primairy-color-1);
+  border-style: none;
+  color: var(--background-color-1);
+}
+
+/* Javascript */
 
 .pop-up fieldset button {
   padding: .8em;
@@ -210,13 +221,6 @@ input:focus {
   padding: .3em;
   height: 2em;
   width: auto;
-}
-/* Javascript */
-
-.next-step {
-  background-color: var(--primairy-color-1);
-  border-style: none;
-  color: var(--background-color-1);
 }
 
 /* Main */

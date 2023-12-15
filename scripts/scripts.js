@@ -26,10 +26,21 @@ buttonPopUp.addEventListener("click", function(e) {
 })
 
 
-var input = document.querySelector(".pop-up-form-1 input");
-var buttonForm1 = document.querySelector(".pop-up-form-1 button")
+var input = document.querySelector(".pop-up fieldset input");
+var buttonForm1 = document.querySelector(".pop-up-form-1 button");
 
 input.addEventListener("input", function(e) {
   console.log("input");
-  buttonForm1.classList.add("next-step");
+  buttonForm1.classList.add("pop-up-next-step");
 })
+
+
+// input.addEventListener("input", goOn, false);
+
+// function goOn(e) {
+//   if (e === "") {
+//   console.log(e);
+//   buttonForm1.classList.add("pop-up-next-step");
+
+//   }
+// }
