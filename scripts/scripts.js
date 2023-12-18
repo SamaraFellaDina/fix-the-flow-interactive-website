@@ -30,9 +30,11 @@ var input = document.querySelector(".pop-up fieldset input");
 var buttonForm1 = document.querySelector(".pop-up-form-1 button");
 
 input.addEventListener("input", function(e) {
-  console.log("input");
+  console.log("hello");
   buttonForm1.classList.add("pop-up-next-step");
-})
+});
+
+
 
 
 // input.addEventListener("input", goOn, false);

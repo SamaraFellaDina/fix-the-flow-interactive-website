@@ -182,11 +182,7 @@ text-decoration: none;
 
 /* Javascript */
 
-#pop-up-next-step {
-  background-color: var(--primairy-color-1);
-  border-style: none;
-  color: var(--background-color-1);
-}
+
 
 /* Javascript */
 
@@ -199,7 +195,14 @@ text-decoration: none;
   font-size: 1em;
   color: var(--secundairy-color-5);
   margin: .5em 0 .5em 0 ;
+  
+  &.pop-up-next-step {
+    background-color: var(--primairy-color-1);
+    border-style: none;
+    color: var(--background-color-1);
+  }
 }
+
 
 .pop-up fieldset p {
   color: var(--grayscale-color-3);
