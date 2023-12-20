@@ -118,6 +118,9 @@ text-decoration: none;
   left: 50%;
   transform: translate(-50%,-50%);
 
+  width: 15em;
+  height: 20em;
+
   border: var(--regular-border);
   border-radius: .1em;
 
@@ -135,8 +138,8 @@ text-decoration: none;
 /* Styling binnen pop-up */
 .pop-up fieldset {
   border-style: none;
-  display: flex;
-  flex-direction: column;
+  display: block;
+
   /* user agent, inherit van html */
   margin-inline-start: 0;
   margin-inline-end: 0;
@@ -154,7 +157,7 @@ text-decoration: none;
 }
 
 .pop-up fieldset span {
-  color: var(--primairy-color-1);
+  color: var(--primairy-color-3);
   text-transform: uppercase;
   font-size: 1.5em;
 }
@@ -212,10 +215,55 @@ text-decoration: none;
 }
 
 .pop-up-socials ul {
+  padding-inline-start: 0;
+  margin-block-start: 1em;
+  margin-block-end: 0;
+  list-style-type: none;
+}
+
+.pop-up-socials ul li {
+  display: inline;
+}
+
+.pop-up-socials ul svg {
+  background-color: var(--primairy-color-3);
+  padding: .3em;
+  height: 2em;
+  width: auto;
+  cursor: pointer;
+}
+
+.pop-up-socials ul div {
+  display: flex;
+  flex-direction: row;
+  gap: 0em;
+  height: 2em;
+  margin-block-start: .5em;
+}
+
+.pop-up-socials ul div button {
+  background-color: var(--primairy-color-1);
+  border-style: solid;
+  border-color: var(--grayscale-color-3);
+  border-radius: 0;
+  border-width: .1em;
+
+  font-size: 1em;
+  color: var(--background-color-1);
+  padding: 0 .5em 0 .5em;
+  margin: 0;
+  cursor: pointer;
+}
+
+.pop-up-socials ul div input {
+  padding-inline: .5em;
+  border-right: none;
+}
+
+/* .pop-up-socials ul {
   list-style-type: none;
   padding-inline-start: 0;
-  display: flex;
-  
+  display: block;
   gap: .5em;
 }
 
@@ -224,7 +272,21 @@ text-decoration: none;
   padding: .3em;
   height: 2em;
   width: auto;
-}
+} */
+
+/* .pop-up-socials ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  height: 3em;
+} */
+
+/* .pop-up-socials div button {
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 2px;
+  margin: 0;
+} */
 
 /* Main */
 main {

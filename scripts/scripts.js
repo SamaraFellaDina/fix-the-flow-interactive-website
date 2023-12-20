@@ -46,3 +46,14 @@ input.addEventListener("input", function(e) {
 
 //   }
 // }
+
+
+
+// Pop-up Stap 2
+
+// var popUpCopyLink = document.querySelector(".pop-up-socials ul div button");
+
+// popUpCopyLink.addEventListener("click" function)
+
+
+  
