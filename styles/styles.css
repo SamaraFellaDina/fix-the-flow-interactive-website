@@ -135,6 +135,21 @@ text-decoration: none;
   display: none;
 }
 
+.pop-up-header svg{
+    height: 2em;
+    width: auto;
+    cursor: pointer;
+
+}
+
+.pop-up-close {
+  
+}
+
+.pop-up-back {
+  visibility: hidden;
+}
+
 /* Styling binnen pop-up */
 .pop-up fieldset {
   border-style: none;

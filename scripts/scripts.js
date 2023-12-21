@@ -7,7 +7,7 @@ var PopUpAddHouse = document.querySelector(".pop-up");
 AddListButton.addEventListener("click", function() {
 
     // 3 - Koppelen van een actie classlist en CSS
-    PopUpAddHouse.classList.toggle("pop-up-show");
+    PopUpAddHouse.classList.add("pop-up-show");
 });
 
 
@@ -57,3 +57,12 @@ input.addEventListener("input", function(e) {
 
 
   
+// pop-up heading functions
+// 1. Selecteren
+var popUpClose = document.querySelector(".pop-up-close")
+var popUpBack = document.querySelector(".pop-up-back")
+
+popUpClose.addEventListener("click", function() {
+  PopUpAddHouse.classList.add("pop-up-none");
+  
+})
