@@ -60,9 +60,26 @@ input.addEventListener("input", function(e) {
 // pop-up heading functions
 // 1. Selecteren
 var popUpClose = document.querySelector(".pop-up-close")
-var popUpBack = document.querySelector(".pop-up-back")
 
 popUpClose.addEventListener("click", function() {
   PopUpAddHouse.classList.add("pop-up-none");
   
 })
+
+var popUpCopyLink = document.querySelector(".pop-up-copylink")
+
+popUpCopyLink.addEventListener("click", function(e) {
+  e.preventDefault();
+  console.log("clicked");
+})
+
+// back to step 1
+
+// var popUpBack = document.querySelector(".pop-up fieldset .pop-up-back")
+
+// popUpBack.addEventListener("click", function (e){
+//   e.preventDefault();
+
+
+//   popUpBack.classList.remove();
+// })

@@ -142,13 +142,7 @@ text-decoration: none;
 
 }
 
-.pop-up-close {
-  
-}
 
-.pop-up-back {
-  visibility: hidden;
-}
 
 /* Styling binnen pop-up */
 .pop-up fieldset {
@@ -227,6 +221,7 @@ text-decoration: none;
   margin-block-start: 0em;
   margin-block-end: 0em;
   border-bottom: .1em solid var(--secundairy-color-5);
+  padding-bottom: 0.5em;
 }
 
 .pop-up-socials ul {
@@ -274,6 +269,14 @@ text-decoration: none;
   padding-inline: .5em;
   border-right: none;
 }
+
+.pop-up fieldset .pop-up-back {
+  background-color: var(--primairy-color-3);
+  border-color: var(--primairy-color-3);
+  color: var(--background-color-1);
+}
+
+
 
 /* .pop-up-socials ul {
   list-style-type: none;
